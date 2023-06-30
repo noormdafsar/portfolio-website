@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Share | Nooruddin</title>
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+
+  <div class="wrapper">
+    <div class="card-wrapper">
+      <div>
+        <img src="./assets/Nooruddin-img1.png" alt="user" />
+      </div>
+      <div class="user-name">
+        <h2>Nooruddin Md Afsar</h2>
+      </div>
+      <div class="designation">
+        <h3>Founder, Noor Rythmz</h3>
+      </div>
+      <div class="bottom-group">
+        <button onclick="openProject()" class="btn-share btn-card">
+          <i class="fa-solid fa-hand-pointer fa-beat-fade"></i>
+          <div>My Projects</div>
+        </button>
+
+        <button onclick="openModal()" class="btn-follow btn-card">
+          <i class="fa-solid fa-share"></i>
+          <div>Follow me</div>
+        </button>
+    
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Component -->
+  <div class="project">
+    <div class="project-header">
+      <h1>Welcome to my project section</h1>
+      <div>
+        <i onclick="closeProject()" class="fa-solid fa-xmark close"></i>
+      </div>
+    </div>
+
+    <div>
+
+      <h3>Click and explore the website</h3>
+
+      
+      <div class="icon-container">
+        <a href="https://noormdafsar.github.io/weather-website/" class="icon" id="weather" target="_blank">
+          <i class="fa-solid fa-cloud fa-fade"></i>
+        </a>
+        <a href="https://noormdafsar.github.io/dev-detective-website/" class="icon" id="dev" target="_blank">
+          <i class="fa-brands fa-dev fa-fade"></i>
+        </a>
+        <a href="https://noormdafsar.github.io/Password-generator-website/" class="icon" id="password" target="_blank">
+          <i class="fa-solid fa-lock fa-fade"></i>
+        </a>
+        <a href="https://noormdafsar.github.io/tour-plan/" class="icon" id="tour" target="_blank">
+          <i class="fa-solid fa-suitcase-rolling fa-fade"></i>
+        </a>
+        <a href="https://noormdafsar.github.io/tic-tac-toe/" class="icon" id="tic-tac" target="_blank">
+          <i class="fa-solid fa-xmark fa-fade"></i>
+        </a>
+        <a href="https://noor-course.netlify.app/" class="icon" id="course" target="_blank">
+          <i class="fa-solid fa-book fa-fade"></i>
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+
+    <!-- website link -->
+    <div class="modal">
+      <div class="modal-header">
+        <h1>My Social Media Handle</h1>
+        <div>
+          <i onclick="clodeModel()" class="fa-solid fa-share"></i>
+        </div>
+      </div>
+  
+  
+      <div>
+  
+        <h3>Click and do follow</h3>
+  
+        
+        <div class="icon-container">
+          <a href="https://www.linkedin.com/in/nooruddin-md-afsar-a0b669235/" class="icon" id="linkedin" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/noormdafsar" class="icon" id="github" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.facebook.com/nooruddinmd.afsar" class="icon" id="youtube" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="https://twitter.com/Md_Afsar612013" class="icon" id="twitter" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/nooruddinmdafsar/" class="icon" id="instagram" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+  
+  
+    </div>
+
+  <!-- Overlay -->
+  <div class="overlay" onclick="closeProject()"></div>
+  <div class="overcover" onclick="closeModal()"></div>
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
